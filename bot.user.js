@@ -269,7 +269,7 @@ function AposBot() {
     };
 
     this.isFood = function(blob, cell) {
-        if (!cell.isVirus() && this.compareSize(cell, blob, 1.33) || (cell.size <= 13)) {
+        if (!cell.isVirus() && this.compareSize(cell, blob, 1.33) || (cell.size <= 1000)) {
             return true;
         }
         return false;
@@ -289,7 +289,10 @@ function AposBot() {
             else {return false;}
         }
         
-        if (cell.isVirus() && this.compareSize(cell, blob, 1.2)) {
+        if (cell.isVirus() && this.compareSize(cell, blob, 1.20000
+
+
+    )) {
             return true;
         } else if (cell.isVirus() && cell.color.substring(3,5).toLowerCase() != "ff") {
             return true;
